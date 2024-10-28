@@ -1,0 +1,18 @@
+1. Taking the destination detail from the sheet using Sheety API
+2. Authenticating with .env file
+3. Search for flights
+
+In main:
+- Getting the big Json with all flight from flight search ✅
+
+- finding the cheapest one using flight data
+    1. Making the flight deals class so that i'll be able to use it end eventually
+        return a FLightDeal object that represents the cheapest flight
+    2. Work on the Method "find_cheapest_flight"-
+        * Check if there is nothing and return N/A
+        * Take the first part of the big json and initialize a FlightData object
+            with the first data to have something to compare.
+        * Loop through all the other parts of the json to compare and find the cheapest flight
+        * Return a FlightData object with the cheapest flight's data
+
+- print the cheapest flight
